@@ -11,6 +11,9 @@ Material Design Lite selectfield component (https://github.com/google/material-d
 [![bitHound Code](https://www.bithound.io/github/mebibou/mdl-selectfield/badges/code.svg)](https://www.bithound.io/github/mebibou/mdl-selectfield)
 
 
+*_Note to self: edited this for one purpose only - to alow for lazy registering. Zlatko_*
+
+
 ## Live Example
 
 Check out the [CodePen](http://codepen.io/mebibou/pen/pjEjOv)

@@ -186,12 +186,15 @@
     this.select_.removeEventListener('reset', this.boundResetHandler);
   };
 
-  // The component registers itself. It can assume componentHandler is available
-  // in the global scope.
-  componentHandler.register({
-    constructor: MaterialSelectfield,
-    classAsString: 'MaterialSelectfield',
-    cssClass: 'mdl-js-selectfield',
-    widget: true
-  });
+  MaterialSelectfield.__register = function() {
+
+    // A workaround for ng2 lazy components.
+    componentHandler.register({
+      constructor: MaterialSelectfield,
+      classAsString: 'MaterialSelectfield',
+      cssClass: 'mdl-js-selectfield',
+      widget: true
+    });
+  }
+
 })();
